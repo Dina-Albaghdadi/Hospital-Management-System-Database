@@ -1,0 +1,137 @@
+//Dina Nabil Talat Albaghdadi
+//20222994
+
+//Procedure to Insert into Patients Table
+SQL>  CREATE OR REPLACE PROCEDURE Insert_To_Patients(
+  2      p_first_name IN VARCHAR2,
+  3      p_last_name IN VARCHAR2,
+  4      p_dob IN DATE,
+  5      p_gender IN VARCHAR2,
+  6      p_phone IN VARCHAR2,
+  7      p_address IN VARCHAR2
+  8  )
+  9  AS
+ 10  BEGIN
+ 11      INSERT INTO Patients (
+ 12          patient_id,
+ 13          first_name,
+ 14          last_name,
+ 15          date_of_birth,
+ 16          gender,
+ 17          phone_number,
+ 18          address
+ 19      ) VALUES (
+ 20          patient_id_seq.NEXTVAL,
+ 21          p_first_name,
+ 22          p_last_name,
+ 23          p_dob,
+ 24          p_gender,
+ 25          p_phone,
+ 26          p_address
+ 27     )
+
+//Procedure to Update Patient Information
+SQL>  CREATE OR REPLACE PROCEDURE Update_Patient_Info(
+  2      p_patient_id IN NUMBER,
+  3      p_phone_number IN VARCHAR2
+  4  )
+  5  AS
+  6  BEGIN
+  7      UPDATE Patients
+  8      SET phone_number = p_phone_number
+  9      WHERE patient_id = p_patient_id;
+ 10      IF SQL%ROWCOUNT = 0 THEN
+ 11          DBMS_OUTPUT.PUT_LINE('No patient found with ID: ' || p_patient_id);
+ 12      ELSE
+ 13          COMMIT;
+ 14          DBMS_OUTPUT.PUT_LINE('Patient phone number updated successfully.');
+ 15      END IF;
+ 16  EXCEPTION
+ 17      WHEN OTHERS THEN
+ 18          ROLLBACK;
+ 19          DBMS_OUTPUT.PUT_LINE('Error updating patient information: ' || SQLERRM);
+ 20 END Update_Patient_Info;
+
+//Procedure to Delete a Patient Record
+SQL> CREATE OR REPLACE PROCEDURE Delete_Patient_Record(
+  2     p_patient_id IN NUMBER
+  3  )
+  4  AS
+  5  BEGIN
+  6     DELETE FROM Patients
+  7     WHERE patient_id = p_patient_id;
+  8     IF SQL%ROWCOUNT = 0 THEN
+  9             DBMS_OUTPUT.PUT_LINE('NO patient found with ID: ' || p_patient_id);
+ 10     ELSE
+ 11             COMMIT;
+ 12             DBMS_OUTPUT.PUT_LINE('Patient record deleted successfully.');
+ 13     END IF;
+ 14  EXCEPTION
+ 15     WHEN OTHERS THEN
+ 16          ROLLBACK;
+ 17          DBMS_OUTPUT.PUT_LINE('Error deleting patient record: ' || SQLERRM);
+ 18  END Delete_Patient_Record;
+
+//Function to Get All Patient Data
+2  CREATE OR REPLACE FUNCTION GetAllPatientData(
+ 3      p_patient_id IN NUMBER
+ 4  ) RETURN SYS_REFCURSOR
+ 5  AS
+ 6      patient_cursor SYS_REFCURSOR;
+ 7  BEGIN
+ 8      OPEN patient_cursor FOR
+ 9      SELECT * FROM Patients
+ 10      WHERE patient_id = p_patient_id;
+ 11
+ 12      RETURN patient_cursor;
+ 13  EXCEPTION
+ 14      WHEN OTHERS THEN
+ 15          DBMS_OUTPUT.PUT_LINE('Error retrieving patient data: ' || SQLERRM);
+ 16          RETURN NULL;
+ 17  END GetAllPatientData;
+
+//Row Type Trigger for Tracking Updates
+
+SQL> CREATE TABLE Patient_Audit (
+  2      audit_id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  3      patient_id NUMBER,
+  4      old_first_name VARCHAR2(50),
+  5      new_first_name VARCHAR2(50),
+  6      old_phone_number VARCHAR2(20),
+  7      new_phone_number VARCHAR2(20),
+  8      changed_by VARCHAR2(100),
+  9      change_time TIMESTAMP DEFAULT SYSTIMESTAMP
+ 10 );
+//create the trigger
+ 1  CREATE OR REPLACE TRIGGER Patient_Update_Audit
+  2  AFTER UPDATE ON Patients
+  3  FOR EACH ROW
+  4  BEGIN
+  5      IF :OLD.first_name != :NEW.first_name OR :OLD.phone_number != :NEW.phone_number THEN
+  6          INSERT INTO Patient_Audit (
+  7              patient_id,
+  8              old_first_name,
+  9              new_first_name,
+ 10              old_phone_number,
+ 11              new_phone_number,
+ 12              changed_by
+ 13          ) VALUES (
+ 14              :NEW.patient_id,
+ 15              :OLD.first_name,
+ 16              :NEW.first_name,
+ 17              :OLD.phone_number,
+ 18              :NEW.phone_number,
+ 19              USER
+ 20          )
+ 21      END IF
+ 22* END
+//Statement Trigger to Prevent Operations on Birthday
+ 1  CREATE OR REPLACE TRIGGER Restrict_Operations_On_Birthday
+  2  BEFORE INSERT OR UPDATE OR DELETE ON Patients
+  3  DECLARE
+  4      v_birthday DATE := TO_DATE('23-06', 'MM-DD')
+  5  BEGIN
+  6      IF TO_CHAR(SYSDATE, 'MM-DD') = TO_CHAR(v_birthday, 'MM-DD') THEN
+  7          RAISE_APPLICATION_ERROR(-20001, 'Database operations are not allowed on the DBA''s birthday!')
+  8      END IF
+  9* END

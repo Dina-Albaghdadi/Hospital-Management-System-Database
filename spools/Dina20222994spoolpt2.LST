@@ -1,0 +1,580 @@
+
+SQL> select * from tab;
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+REDO_DB                                                                         
+TABLE                                                                           
+                                                                                
+REDO_LOG                                                                        
+TABLE                                                                           
+                                                                                
+SYSCATALOG                                                                      
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+CATALOG                                                                         
+SYNONYM                                                                         
+                                                                                
+TAB                                                                             
+SYNONYM                                                                         
+                                                                                
+COL                                                                             
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+TABQUOTAS                                                                       
+SYNONYM                                                                         
+                                                                                
+SYSFILES                                                                        
+SYNONYM                                                                         
+                                                                                
+PUBLICSYN                                                                       
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_WORKLOAD                                                             
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_BASETABLE                                                            
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_SQLDEPEND                                                            
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_PRETTY                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_TEMP                                                                 
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_FILTER                                                               
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_LOG                                                                  
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_FILTERINSTANCE                                                       
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_LEVEL                                                                
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_ROLLUP                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_AJG                                                                  
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_FJG                                                                  
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_GC                                                                   
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_CLIQUE                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_ELIGIBLE                                                             
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_OUTPUT                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_EXCEPTIONS                                                           
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_PARAMETERS                                                           
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_INFO                                                                 
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_JOURNAL                                                              
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_PLAN                                                                 
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW_WORKLOAD                                                                  
+VIEW                                                                            
+                                                                                
+MVIEW_FILTER                                                                    
+VIEW                                                                            
+                                                                                
+MVIEW_LOG                                                                       
+VIEW                                                                            
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW_FILTERINSTANCE                                                            
+VIEW                                                                            
+                                                                                
+MVIEW_RECOMMENDATIONS                                                           
+VIEW                                                                            
+                                                                                
+MVIEW_EVALUATIONS                                                               
+VIEW                                                                            
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW_EXCEPTIONS                                                                
+VIEW                                                                            
+                                                                                
+AQ$_SCHEDULES                                                                   
+TABLE                                                                           
+                                                                                
+OL$                                                                             
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+OL$HINTS                                                                        
+TABLE                                                                           
+                                                                                
+OL$NODES                                                                        
+TABLE                                                                           
+                                                                                
+SCHEDULER_PROGRAM_ARGS                                                          
+VIEW                                                                            
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+SCHEDULER_JOB_ARGS                                                              
+VIEW                                                                            
+                                                                                
+SCHEDULER_PROGRAM_ARGS_TBL                                                      
+TABLE                                                                           
+                                                                                
+SCHEDULER_JOB_ARGS_TBL                                                          
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+AQ$_QUEUE_TABLES                                                                
+SYNONYM                                                                         
+                                                                                
+AQ$_QUEUES                                                                      
+SYNONYM                                                                         
+                                                                                
+AQ$_KEY_SHARD_MAP                                                               
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+AQ$_INTERNET_AGENTS                                                             
+SYNONYM                                                                         
+                                                                                
+AQ$_INTERNET_AGENT_PRIVS                                                        
+SYNONYM                                                                         
+                                                                                
+STUDENTS                                                                        
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+COURSES                                                                         
+TABLE                                                                           
+                                                                                
+TAKES                                                                           
+TABLE                                                                           
+                                                                                
+DEPARTMENTS                                                                     
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+DEPT_STUDENT_COUNT                                                              
+TABLE                                                                           
+                                                                                
+PRODUCT_PRIVS                                                                   
+VIEW                                                                            
+                                                                                
+SQLPLUS_PRODUCT_PROFILE                                                         
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+PRODUCT_USER_PROFILE                                                            
+SYNONYM                                                                         
+                                                                                
+HELP                                                                            
+TABLE                                                                           
+                                                                                
+INSTRUCTORS                                                                     
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+INSTRUCTOR                                                                      
+TABLE                                                                           
+                                                                                
+PATIENTS                                                                        
+TABLE                                                                           
+                                                                                
+DOCTORS                                                                         
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+APPOINTMENTS                                                                    
+TABLE                                                                           
+                                                                                
+MEDICALRECORDS                                                                  
+TABLE                                                                           
+                                                                                
+DOCTORAPPOINTMENTSTATS                                                          
+TABLE                                                                           
+                                                                                
+
+66 rows selected.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE MATERIALIZED VIEW DoctorAppointmentStats
+  2  REFRESH COMPLETE ON DEMAND
+  3  AS
+  4  SELECT 
+  5      d.doctor_id,
+  6      d.first_name || ' ' || d.last_name AS doctor_name,
+  7      d.specialization,
+  8      COUNT(a.appointment_id) AS total_appointments,
+  9      SUM(CASE WHEN a.status = 'Completed' THEN 1 ELSE 0 END) AS completed_appointments,
+ 10      SUM(CASE WHEN a.status = 'Cancelled' THEN 1 ELSE 0 END) AS cancelled_appointments
+ 11  FROM 
+ 12      Doctors d
+ 13  LEFT JOIN 
+ 14      Appointments a ON d.doctor_id = a.doctor_id
+ 15  GROUP BY 
+ 16*     d.doctor_id, d.first_name, d.last_name, d.specialization
+SQL> r
+  1  CREATE MATERIALIZED VIEW DoctorAppointmentStats
+  2  REFRESH COMPLETE ON DEMAND
+  3  AS
+  4  SELECT 
+  5      d.doctor_id,
+  6      d.first_name || ' ' || d.last_name AS doctor_name,
+  7      d.specialization,
+  8      COUNT(a.appointment_id) AS total_appointments,
+  9      SUM(CASE WHEN a.status = 'Completed' THEN 1 ELSE 0 END) AS completed_appointments,
+ 10      SUM(CASE WHEN a.status = 'Cancelled' THEN 1 ELSE 0 END) AS cancelled_appointments
+ 11  FROM 
+ 12      Doctors d
+ 13  LEFT JOIN 
+ 14      Appointments a ON d.doctor_id = a.doctor_id
+ 15  GROUP BY 
+ 16*     d.doctor_id, d.first_name, d.last_name, d.specialization
+    Doctors d
+    *
+ERROR at line 12:
+ORA-12006: materialized view or zonemap "SYSTEM"."DOCTORAPPOINTMENTSTATS" 
+already exists 
+Help: https://docs.oracle.com/error-help/db/ora-12006/ 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  INSERT INTO Patients (patient_id, first_name, last_name, date_of_birth, gender, phone_number, address)
+  2* VALUES (patient_id_seq.NEXTVAL, 'Mohammed', 'Ali', TO_DATE('1985-05-15', 'YYYY-MM-DD'), 'Male', '0599123456', 'Gaza City')
+SQL> r
+  1  INSERT INTO Patients (patient_id, first_name, last_name, date_of_birth, gender, phone_number, address)
+  2* VALUES (patient_id_seq.NEXTVAL, 'Mohammed', 'Ali', TO_DATE('1985-05-15', 'YYYY-MM-DD'), 'Male', '0599123456', 'Gaza City')
+
+1 row created.
+
+SQL> select * from Patients;
+
+PATIENT_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                          DATE_OF_B GENDER             
+-------------------------------------------------- --------- ----------         
+PHONE_NUMBER                                                                    
+--------------------                                                            
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+REGISTRAT                                                                       
+---------                                                                       
+      1001 Mohammed                                                             
+Ali                                                15-MAY-85 Male               
+0599123456                                                                      
+
+PATIENT_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                          DATE_OF_B GENDER             
+-------------------------------------------------- --------- ----------         
+PHONE_NUMBER                                                                    
+--------------------                                                            
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+REGISTRAT                                                                       
+---------                                                                       
+Gaza City                                                                       
+12-AUG-25                                                                       
+                                                                                
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  INSERT INTO Doctors (doctor_id, first_name, last_name, specialization, phone_number, email)
+  2* VALUES (doctor_id_seq.NEXTVAL, 'Ahmed', 'Khalil', 'Cardiology', '0599765432', 'ahmed.khalil@hospital.com')
+SQL> r
+  1  INSERT INTO Doctors (doctor_id, first_name, last_name, specialization, phone_number, email)
+  2* VALUES (doctor_id_seq.NEXTVAL, 'Ahmed', 'Khalil', 'Cardiology', '0599765432', 'ahmed.khalil@hospital.com')
+VALUES (doctor_id_seq.NEXTVAL, 'Ahmed', 'Khalil', 'Cardiology', '0599765432', 'ahmed.khalil@hospital.com')
+        *
+ERROR at line 2:
+ORA-02289: sequence does not exist 
+Help: https://docs.oracle.com/error-help/db/ora-02289/ 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* CREATE SEQUENCE doctor_id_seq START WITH 2001 INCREMENT BY 1
+SQL> r
+  1* CREATE SEQUENCE doctor_id_seq START WITH 2001 INCREMENT BY 1
+
+Sequence created.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* CREATE SEQUENCE appointment_id_seq START WITH 3001 INCREMENT BY 1
+SQL> r
+  1* CREATE SEQUENCE appointment_id_seq START WITH 3001 INCREMENT BY 1
+
+Sequence created.
+
+SQL> CREATE SEQUENCE record_id_seq START WITH 4001 INCREMENT BY 1;
+
+Sequence created.
+
+SQL> INSERT INTO Doctors (doctor_id, first_name, last_name, specialization, phone_number, email)VALUES (doctor_id_seq.NEXTVAL, 'Ahmed', 'Khalil', 'Cardiology', '0599765432', 'ahmed.khalil@hospital.com');
+
+1 row created.
+
+SQL> INSERT INTO Appointments (appointment_id, patient_id, doctor_id, appointment_date, status)VALUES (appointment_id_seq.NEXTVAL, 1001, 2001, TO_TIMESTAMP('2025-07-20 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), 'Scheduled');
+
+1 row created.
+
+SQL> INSERT INTO MedicalRecords (record_id, patient_id, doctor_id, diagnosis, prescription, notes)VALUES (record_id_seq.NEXTVAL, 1001, 2001, 'Hypertension', 'Lisinopril 10mg daily', 'Patient advised to reduce salt intake and exercise regularly');
+
+1 row created.
+
+SQL> select * from Doctors;
+
+ DOCTOR_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                                                       
+--------------------------------------------------                              
+SPECIALIZATION                                                                  
+--------------------------------------------------------------------------------
+PHONE_NUMBER                                                                    
+--------------------                                                            
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+HIRE_DATE                                                                       
+---------                                                                       
+      2001 Ahmed                                                                
+
+ DOCTOR_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                                                       
+--------------------------------------------------                              
+SPECIALIZATION                                                                  
+--------------------------------------------------------------------------------
+PHONE_NUMBER                                                                    
+--------------------                                                            
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+HIRE_DATE                                                                       
+---------                                                                       
+Khalil                                                                          
+
+ DOCTOR_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                                                       
+--------------------------------------------------                              
+SPECIALIZATION                                                                  
+--------------------------------------------------------------------------------
+PHONE_NUMBER                                                                    
+--------------------                                                            
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+HIRE_DATE                                                                       
+---------                                                                       
+Cardiology                                                                      
+
+ DOCTOR_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                                                       
+--------------------------------------------------                              
+SPECIALIZATION                                                                  
+--------------------------------------------------------------------------------
+PHONE_NUMBER                                                                    
+--------------------                                                            
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+HIRE_DATE                                                                       
+---------                                                                       
+0599765432                                                                      
+
+ DOCTOR_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                                                       
+--------------------------------------------------                              
+SPECIALIZATION                                                                  
+--------------------------------------------------------------------------------
+PHONE_NUMBER                                                                    
+--------------------                                                            
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+HIRE_DATE                                                                       
+---------                                                                       
+ahmed.khalil@hospital.com                                                       
+
+ DOCTOR_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                                                       
+--------------------------------------------------                              
+SPECIALIZATION                                                                  
+--------------------------------------------------------------------------------
+PHONE_NUMBER                                                                    
+--------------------                                                            
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+HIRE_DATE                                                                       
+---------                                                                       
+12-AUG-25                                                                       
+
+ DOCTOR_ID FIRST_NAME                                                           
+---------- --------------------------------------------------                   
+LAST_NAME                                                                       
+--------------------------------------------------                              
+SPECIALIZATION                                                                  
+--------------------------------------------------------------------------------
+PHONE_NUMBER                                                                    
+--------------------                                                            
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+HIRE_DATE                                                                       
+---------                                                                       
+                                                                                
+
+SQL> select *from Appointments;
+
+APPOINTMENT_ID PATIENT_ID  DOCTOR_ID                                            
+-------------- ---------- ----------                                            
+APPOINTMENT_DATE                                                                
+---------------------------------------------------------------------------     
+STATUS                                                                          
+--------------------                                                            
+NOTES                                                                           
+--------------------------------------------------------------------------------
+          3001       1001       2001                                            
+20-JUL-25 10.00.00.000000 AM                                                    
+Scheduled                                                                       
+                                                                                
+                                                                                
+
+SQL> select * from MedicalRecords;
+
+ RECORD_ID PATIENT_ID  DOCTOR_ID VISIT_DAT                                      
+---------- ---------- ---------- ---------                                      
+DIAGNOSIS                                                                       
+--------------------------------------------------------------------------------
+PRESCRIPTION                                                                    
+--------------------------------------------------------------------------------
+NOTES                                                                           
+--------------------------------------------------------------------------------
+      4001       1001       2001 12-AUG-25                                      
+Hypertension                                                                    
+Lisinopril 10mg daily                                                           
+Patient advised to reduce salt intake and exercise regularly                    
+                                                                                
+
+SQL> spool off;

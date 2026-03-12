@@ -1,0 +1,528 @@
+SQL> show user;
+USER is "SYSTEM"
+SQL> CREATE TABLE Patients(
+  2  patient_id NUMBER PRIMARY KEY,
+  3  first_name VARCHAR2(50) NOT NULL,
+  4  last_name VARCHAR2(50) NOT NULL,
+  5  date_of_birth DATE NOT NULL,
+  6  gender VARCHAR2(10) CHECK (dender IN ('Male', 'Female')
+  7  phone_number VARCHAR2(20),
+  8  address VARCHAR2(200),
+  9  registration_date DATE DEFAULT SYSDATE NOT NULL
+ 10  );
+phone_number VARCHAR2(20),
+*
+ERROR at line 7:
+ORA-02252: check constraint condition not properly ended 
+Help: https://docs.oracle.com/error-help/db/ora-02252/ 
+
+
+SQL> select*from tab;
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+REDO_DB                                                                         
+TABLE                                                                           
+                                                                                
+REDO_LOG                                                                        
+TABLE                                                                           
+                                                                                
+SYSCATALOG                                                                      
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+CATALOG                                                                         
+SYNONYM                                                                         
+                                                                                
+TAB                                                                             
+SYNONYM                                                                         
+                                                                                
+COL                                                                             
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+TABQUOTAS                                                                       
+SYNONYM                                                                         
+                                                                                
+SYSFILES                                                                        
+SYNONYM                                                                         
+                                                                                
+PUBLICSYN                                                                       
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_WORKLOAD                                                             
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_BASETABLE                                                            
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_SQLDEPEND                                                            
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_PRETTY                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_TEMP                                                                 
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_FILTER                                                               
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_LOG                                                                  
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_FILTERINSTANCE                                                       
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_LEVEL                                                                
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_ROLLUP                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_AJG                                                                  
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_FJG                                                                  
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_GC                                                                   
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_CLIQUE                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_ELIGIBLE                                                             
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_OUTPUT                                                               
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_EXCEPTIONS                                                           
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_PARAMETERS                                                           
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW$_ADV_INFO                                                                 
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_JOURNAL                                                              
+TABLE                                                                           
+                                                                                
+MVIEW$_ADV_PLAN                                                                 
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW_WORKLOAD                                                                  
+VIEW                                                                            
+                                                                                
+MVIEW_FILTER                                                                    
+VIEW                                                                            
+                                                                                
+MVIEW_LOG                                                                       
+VIEW                                                                            
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW_FILTERINSTANCE                                                            
+VIEW                                                                            
+                                                                                
+MVIEW_RECOMMENDATIONS                                                           
+VIEW                                                                            
+                                                                                
+MVIEW_EVALUATIONS                                                               
+VIEW                                                                            
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+MVIEW_EXCEPTIONS                                                                
+VIEW                                                                            
+                                                                                
+AQ$_SCHEDULES                                                                   
+TABLE                                                                           
+                                                                                
+OL$                                                                             
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+OL$HINTS                                                                        
+TABLE                                                                           
+                                                                                
+OL$NODES                                                                        
+TABLE                                                                           
+                                                                                
+SCHEDULER_PROGRAM_ARGS                                                          
+VIEW                                                                            
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+SCHEDULER_JOB_ARGS                                                              
+VIEW                                                                            
+                                                                                
+SCHEDULER_PROGRAM_ARGS_TBL                                                      
+TABLE                                                                           
+                                                                                
+SCHEDULER_JOB_ARGS_TBL                                                          
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+AQ$_QUEUE_TABLES                                                                
+SYNONYM                                                                         
+                                                                                
+AQ$_QUEUES                                                                      
+SYNONYM                                                                         
+                                                                                
+AQ$_KEY_SHARD_MAP                                                               
+SYNONYM                                                                         
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+AQ$_INTERNET_AGENTS                                                             
+SYNONYM                                                                         
+                                                                                
+AQ$_INTERNET_AGENT_PRIVS                                                        
+SYNONYM                                                                         
+                                                                                
+STUDENTS                                                                        
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+COURSES                                                                         
+TABLE                                                                           
+                                                                                
+TAKES                                                                           
+TABLE                                                                           
+                                                                                
+DEPARTMENTS                                                                     
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+DEPT_STUDENT_COUNT                                                              
+TABLE                                                                           
+                                                                                
+PRODUCT_PRIVS                                                                   
+VIEW                                                                            
+                                                                                
+SQLPLUS_PRODUCT_PROFILE                                                         
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+PRODUCT_USER_PROFILE                                                            
+SYNONYM                                                                         
+                                                                                
+HELP                                                                            
+TABLE                                                                           
+                                                                                
+INSTRUCTORS                                                                     
+TABLE                                                                           
+                                                                                
+
+TNAME                                                                           
+--------------------------------------------------------------------------------
+TABTYPE        CLUSTERID                                                        
+------------- ----------                                                        
+INSTRUCTOR                                                                      
+TABLE                                                                           
+                                                                                
+
+61 rows selected.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE Patients (
+  2      patient_id NUMBER PRIMARY KEY,
+  3      first_name VARCHAR2(50) NOT NULL,
+  4      last_name VARCHAR2(50) NOT NULL,
+  5      date_of_birth DATE NOT NULL,
+  6      gender VARCHAR2(10) CHECK (gender IN ('Male', 'Female')),
+  7      phone_number VARCHAR2(20),
+  8      address VARCHAR2(200),
+  9      registration_date DATE DEFAULT SYSDATE NOT NULL
+ 10* )
+SQL> r
+  1  CREATE TABLE Patients (
+  2      patient_id NUMBER PRIMARY KEY,
+  3      first_name VARCHAR2(50) NOT NULL,
+  4      last_name VARCHAR2(50) NOT NULL,
+  5      date_of_birth DATE NOT NULL,
+  6      gender VARCHAR2(10) CHECK (gender IN ('Male', 'Female')),
+  7      phone_number VARCHAR2(20),
+  8      address VARCHAR2(200),
+  9      registration_date DATE DEFAULT SYSDATE NOT NULL
+ 10* )
+
+Table created.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE Doctors (
+  2      doctor_id NUMBER PRIMARY KEY,
+  3      first_name VARCHAR2(50) NOT NULL,
+  4      last_name VARCHAR2(50) NOT NULL,
+  5      specialization VARCHAR2(100) NOT NULL,
+  6      phone_number VARCHAR2(20),
+  7      email VARCHAR2(100),
+  8      hire_date DATE DEFAULT SYSDATE NOT NULL
+  9* )
+SQL> r
+  1  CREATE TABLE Doctors (
+  2      doctor_id NUMBER PRIMARY KEY,
+  3      first_name VARCHAR2(50) NOT NULL,
+  4      last_name VARCHAR2(50) NOT NULL,
+  5      specialization VARCHAR2(100) NOT NULL,
+  6      phone_number VARCHAR2(20),
+  7      email VARCHAR2(100),
+  8      hire_date DATE DEFAULT SYSDATE NOT NULL
+  9* )
+
+Table created.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE Appointments (
+  2      appointment_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      appointment_date TIMESTAMP NOT NULL,
+  6      status VARCHAR2(20) DEFAULT 'Scheduled' CHECK (status IN ('Scheduled', 'Completed', 'Cancelled')),
+  7      notes VARCHAR2,
+  8      CONSTRAINT fk_appointment_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+  9      CONSTRAINT fk_appointment_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+ 10* )
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE Appointments (
+  2      appointment_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      appointment_date TIMESTAMP NOT NULL,
+  6      status VARCHAR2(20) DEFAULT 'Scheduled' CHECK (status IN ('Scheduled', 'Completed', 'Cancelled')),
+  7      notes VARCHAR2(500),
+  8      CONSTRAINT fk_appointment_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+  9      CONSTRAINT fk_appointment_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+ 10* )
+SQL> r
+  1  CREATE TABLE Appointments (
+  2      appointment_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      appointment_date TIMESTAMP NOT NULL,
+  6      status VARCHAR2(20) DEFAULT 'Scheduled' CHECK (status IN ('Scheduled', 'Completed', 'Cancelled')),
+  7      notes VARCHAR2(500),
+  8      CONSTRAINT fk_appointment_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+  9      CONSTRAINT fk_appointment_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+ 10* )
+
+Table created.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE Appointments (
+  2      appointent_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      appointment_date TIMESTAMP NOT NULL,
+  6      status VARCHAR2(20) DEFAULT 'Scheduled' CHECK (status IN ('Scheduled', 'Completed', 'Cancelled')),
+  7      notes VARCHAR2(500),
+  8      CONSTRAINT fk_appointment_patient FOREIGN KEY  REFERENCES Patients(patient_id),
+  9      CONSTRAINT fk_appointment_doctor FOREIGN KEY  REFERENCES Doctors(doctor_id)
+ 10* )
+SQL> r
+  1  CREATE TABLE Appointments (
+  2      appointent_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      appointment_date TIMESTAMP NOT NULL,
+  6      status VARCHAR2(20) DEFAULT 'Scheduled' CHECK (status IN ('Scheduled', 'Completed', 'Cancelled')),
+  7      notes VARCHAR2(500),
+  8      CONSTRAINT fk_appointment_patient FOREIGN KEY  REFERENCES Patients(patient_id),
+  9      CONSTRAINT fk_appointment_doctor FOREIGN KEY  REFERENCES Doctors(doctor_id)
+ 10* )
+    CONSTRAINT fk_appointment_patient FOREIGN KEY  REFERENCES Patients(patient_id),
+                                                   *
+ERROR at line 8:
+ORA-00906: missing left parenthesis 
+Help: https://docs.oracle.com/error-help/db/ora-00906/ 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE MedicalRecords (
+  2      record_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      visit_date DATE DEFAULT SYSDATE NOT NULL,
+  6      diagnosis VARCHAR2(200) NOT NULL,
+  7      prescription VARCHAR2(500),
+  8      notes VARCHAR2(1000),
+  9      CONSTRAINT fk_record_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+ 10*     CONSTRAINT fk_record_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+SQL> r
+  1  CREATE TABLE MedicalRecords (
+  2      record_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      visit_date DATE DEFAULT SYSDATE NOT NULL,
+  6      diagnosis VARCHAR2(200) NOT NULL,
+  7      prescription VARCHAR2(500),
+  8      notes VARCHAR2(1000),
+  9      CONSTRAINT fk_record_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+ 10*     CONSTRAINT fk_record_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+    CONSTRAINT fk_record_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+                                                                                    *
+ERROR at line 10:
+ORA-00907: missing right parenthesis 
+Help: https://docs.oracle.com/error-help/db/ora-00907/ 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE MedicalRecords (
+  2      record_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      visit_date DATE DEFAULT SYSDATE NOT NULL,
+  6      diagnosis VARCHAR2(200) NOT NULL,
+  7      prescription VARCHAR2(500),
+  8      notes VARCHAR2(1000),
+  9      CONSTRAINT fk_record_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+ 10      CONSTRAINT fk_record_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+ 11* );
+SQL> r
+  1  CREATE TABLE MedicalRecords (
+  2      record_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      visit_date DATE DEFAULT SYSDATE NOT NULL,
+  6      diagnosis VARCHAR2(200) NOT NULL,
+  7      prescription VARCHAR2(500),
+  8      notes VARCHAR2(1000),
+  9      CONSTRAINT fk_record_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+ 10      CONSTRAINT fk_record_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+ 11* );
+);
+ *
+ERROR at line 11:
+ORA-00922: missing or invalid option 
+Help: https://docs.oracle.com/error-help/db/ora-00922/ 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  CREATE TABLE MedicalRecords (
+  2      record_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      visit_date DATE DEFAULT SYSDATE NOT NULL,
+  6      diagnosis VARCHAR2(200) NOT NULL,
+  7      prescription VARCHAR2(500),
+  8      notes VARCHAR2(1000),
+  9      CONSTRAINT fk_record_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+ 10      CONSTRAINT fk_record_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+ 11* )
+SQL> r
+  1  CREATE TABLE MedicalRecords (
+  2      record_id NUMBER PRIMARY KEY,
+  3      patient_id NUMBER NOT NULL,
+  4      doctor_id NUMBER NOT NULL,
+  5      visit_date DATE DEFAULT SYSDATE NOT NULL,
+  6      diagnosis VARCHAR2(200) NOT NULL,
+  7      prescription VARCHAR2(500),
+  8      notes VARCHAR2(1000),
+  9      CONSTRAINT fk_record_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
+ 10      CONSTRAINT fk_record_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+ 11* )
+
+Table created.
+
+SQL> spool off;
