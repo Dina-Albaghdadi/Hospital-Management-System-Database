@@ -1,5 +1,3 @@
-//Dina Nabil Talat Albaghdadi
-//20222994
 //create tables
 CREATE TABLE Patients (
   2      patient_id NUMBER PRIMARY KEY,
@@ -66,8 +64,8 @@ SQL> CREATE SEQUENCE patient_id_seq START WITH 1001 INCREMENT BY 1;
 SQL> CREATE SEQUENCE doctor_id_seq START WITH 2001 INCREMENT BY 1;
 SQL> CREATE SEQUENCE appointment_id_seq START WITH 3001 INCREMENT BY 1;
 SQL> CREATE SEQUENCE record_id_seq START WITH 4001 INCREMENT BY 1;
-// Insert sample data using sequences 
 
+// Insert sample data using sequences 
 SQL> INSERT INTO Patients (patient_id, first_name, last_name, date_of_birth, gender, phone_number, address)
 VALUES (patient_id_seq.NEXTVAL, 'Mohammed', 'Ali', TO_DATE('1985-05-15', 'YYYY-MM-DD'), 'Male', '0599123456', 'Gaza City');
 
@@ -79,3 +77,4 @@ VALUES (appointment_id_seq.NEXTVAL, 1001, 2001, TO_TIMESTAMP('2025-07-20 10:00:0
 
 SQL> INSERT INTO MedicalRecords (record_id, patient_id, doctor_id, diagnosis, prescription, notes)
 VALUES (record_id_seq.NEXTVAL, 1001, 2001, 'Hypertension', 'Lisinopril 10mg daily', 'Patient advised to reduce salt intake and exercise regularly');
+
