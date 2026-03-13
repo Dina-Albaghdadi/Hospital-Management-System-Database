@@ -32,4 +32,4 @@ PatientDAO.java: Handles the execution of PL/SQL procedures from the Java enviro
 Database Setup: Run the SQL scripts provided in the Part1_SQL folder to create tables, sequences, and views.
 Logic Deployment: Run the PL/SQL scripts in the Part2_PLSQL folder to compile the procedures, functions, and triggers.
 Application Launch: Open the Java project in NetBeans, ensure your Oracle JDBC driver is configured, and run the application to interact with the database.
-Security Trigger (Restrict_Operations_On_Birthday): A statement-level trigger that prevents any INSERT, UPDATE, or DELETE operations on the DBA's birthday (June 23rd)
+Security Trigger (Restrict_Operations_On_Birthday): A statement-level trigger that prevents any INSERT, UPDATE, or DELETE operations on the DBA's birthday (June 23rd).
