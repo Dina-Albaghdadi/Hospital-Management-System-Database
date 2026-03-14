@@ -1,6 +1,3 @@
-//Dina Nabil Talat Albaghdadi
-//20222994
-
 //Procedure to Insert into Patients Table
 SQL>  CREATE OR REPLACE PROCEDURE Insert_To_Patients(
   2      p_first_name IN VARCHAR2,
