@@ -1,5 +1,6 @@
 # 🏥 Hospital Management System - Database Project
 
+## 📝 Project Overview
 This project is a comprehensive **Hospital Management System** developed as part of the Database course at **Al-Azhar University of Gaza, Faculty of EIT**. It integrates a robust relational database backend with a functional Java-based graphical interface.
 
 The system is designed to handle core hospital operations, including patient registration, doctor scheduling, and medical record management, using advanced database techniques like **PL/SQL programming** and **JDBC integration**.
