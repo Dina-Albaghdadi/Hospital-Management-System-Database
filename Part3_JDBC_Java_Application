@@ -1,5 +1,3 @@
-//Dina Namil Talat Albaghdadi
-//20222994
 //Sample JDBC Connection Code
 
 import java.sql.Connection;
