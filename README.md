@@ -30,3 +30,15 @@ The project implements robust backend logic to ensure data integrity and securit
 *   **⚡ Triggers:**
     *   **📝 Audit Trigger (Patient_Update_Audit):** A row-level trigger that records any changes to patient names or phone numbers into an audit table, capturing old/new values, the user, and the timestamp.
     *   **🛡️ Security Trigger (Restrict_Operations_On_Birthday):** A statement-level trigger that prevents any `INSERT`, `UPDATE`, or `DELETE` operations on the DBA's birthday.
+ ### 3. 💻 Application Integration (Java/JDBC)
+A graphical application developed in **NetBeans** to simulate real-world database interactions:
+*   **🔌 DBConnection.java:** Manages the JDBC connection to the Oracle database.
+*   **🖥️ PatientDAO.java:** Handles the execution of PL/SQL procedures from the Java environment to perform CRUD operations.
+
+---
+
+## ⚙️ How to Use
+1.  **🛢️ Database Setup:** Run the SQL scripts provided in the `Pt1_SQL` folder to create tables, sequences, and views.
+2.  **📜 Logic Deployment:** Run the PL/SQL scripts in the `Pt2_PLSQL` folder to compile the procedures, functions, and triggers.
+3.  **🚀 Application Launch:** Open the Java project in NetBeans, ensure your Oracle JDBC driver is configured, and run the application.
+
